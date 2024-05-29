@@ -111,3 +111,17 @@ height: 35vh;
     background-color: brown;
     margin: 1rem;    
 }
+
+.demo{
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+.demo div{
+    height: 20vh;
+    width: 50%;
+    background-color: yellow;
+    margin: 1rem;
+}
