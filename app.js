@@ -47,7 +47,6 @@ app.use(bodyParser.json());
 //     saveUninitialized: false,
 //   })
 // );
- 
 
 // app.use(flash());
 
@@ -56,24 +55,15 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get('/About', (req, res) => {
-  res.render('About');
+app.get("/About", (req, res) => {
+  res.render("About");
 });
- 
-app.get('/Search', (req, res) => {
-  res.render('Search');
+
+app.get("/Search", (req, res) => {
+  res.render("Search");
 });
- 
- 
 
- 
-
- 
-
- 
-
- 
-  // Use connection pool to query data
+// Use connection pool to query data
 //   connection.getConnection((err, conn) => {
 //     if (err) {
 //       console.error("Error acquiring connection from pool:", err);
@@ -96,28 +86,16 @@ app.get('/Search', (req, res) => {
 //       res.render("store", { store: rows });
 //     });
 //   });
- 
-
- 
-
- 
 
 //signUp Form
- 
+
 //get user from DB for login
- 
 
 // Login form
 
-
 // Route to add details in feeds form
 
-
 // Route for fetch from the database feeds Form
-
-
-
-
 
 //port number setup
 const PORT = process.env.PORT || 1234;
