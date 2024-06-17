@@ -63,6 +63,22 @@ app.get("/Search", (req, res) => {
   res.render("Search");
 });
 
+app.get("/support", (req, res) => {
+  res.render("support");
+});
+
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+app.get("/signUp", (req, res) => {
+  res.render("signUp");
+});
+// app.get("/termsCondition", (req, res) => {
+//   res.render("termsCondition");
+// });
+app.get("/privacyPolicy", (req, res) => {
+  res.render("privacyPolicy");
+});
 // Use connection pool to query data
 //   connection.getConnection((err, conn) => {
 //     if (err) {

@@ -313,7 +313,7 @@ header.sticky {
 }
 
 #contact{
-  margin-top: 180px;
+   margin-top:3rem;
   background: var(--Accent-Color);
   padding-left: 60px;
 }

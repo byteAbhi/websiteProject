@@ -11,12 +11,14 @@ body {
 
 body .container {
   max-width: 1100px;
+  margin-top: 5rem;
 }
 
 #filter-buttons button {
   border-radius: 3px;
   background: #fff;
   border-color: transparent;
+  font-size: medium;
 }
 
 #filter-buttons button:hover {
@@ -31,6 +33,7 @@ body .container {
 #filterable-cards .card {
   width: 15rem;
   border: 2px solid transparent;
+  font-size: medium;
 }
 
 #filterable-cards .card.hide {

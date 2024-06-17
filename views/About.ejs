@@ -64,24 +64,7 @@
 
   <body>
     <!-- navbar -->
-    <header>
-      <a href="#" class="logo"
-        ><img src="/img/logo-removebg-preview.png" class="nav-img" alt=""
-      /></a>
-      <ul class="navbar">
-        <div class="search">
-          <i class="fa fa-search" style="font-size:17px;color:gray"></i> <br>
-        <input class="search-input" placeholder="search" type="search">
-        </div>
-      </ul>
-      <ul class="navbar">
-        <li><a href="Search">Static</a></li>
-        <li><a href="Search">Dynamic</a></li>
-        <li><a href="Search">Templates</a></li>
-        <li><a href="About">About-us</a></li>
-        <li><i class="fa-solid fa-user"></i></li>
-      </ul>
-    </header>
+    <%- include('./nav')%>
 
     <section class="home">
       <div>

@@ -58,13 +58,13 @@ html {
 }
 
 /* floating */
-.float{
+.float {
   position: fixed;
   bottom: 20px;
   right: 20px;
   width: 50px;
   height: 50px;
-  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);;
+  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -72,7 +72,6 @@ html {
   justify-content: center;
   font-size: 3rem;
 }
- 
 
 /* Navbar start  */
 
@@ -93,6 +92,7 @@ header {
 
 .navbar {
   display: flex;
+  align-items: center;
 }
 
 .navbar a {
@@ -102,6 +102,7 @@ header {
   padding: 10px 10px;
   border-radius: 25px;
   transition: ease 0.4s;
+  text-decoration: none;
 }
 
 .navbar a:hover {
@@ -111,7 +112,7 @@ header {
   border-radius: 25px;
 }
 
-li.active{
+li.active {
   background: var(--Accent-Color);
   color: var(--bg-color);
   box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
@@ -119,7 +120,7 @@ li.active{
   padding: 9px 0px;
 }
 
-.not-active{
+.not-active {
   padding: 9px 0px;
 }
 
@@ -132,7 +133,7 @@ header.sticky {
   width: 100px;
 }
 
-.search{
+.search {
   width: max-content;
   display: flex;
   align-items: center;
@@ -141,7 +142,7 @@ header.sticky {
   background: #f6f6f6;
 }
 
-.search-input{
+.search-input {
   font-size: 16px;
   font-family: var(--body-font);
   color: #28282b;
@@ -151,48 +152,55 @@ header.sticky {
   background: transparent;
 }
 
-.search-input::placeholder{
+.search-input::placeholder {
   color: rgba(0, 0, 0, 0.25);
 }
 
-.search i{
-  font-size:17px;
-  color:gray;
-  margin-right:1rem;
-  
+.search i {
+  font-size: 17px;
+  color: gray;
+  margin-right: 1rem;
 }
 
-.navbar i{
-  font-size: 2rem ;
-  background:var(--Background-Color);
-  height:25px;
-  width:25px;
-  text-align:center;
+.navbar i {
+  font-size: 2rem;
+  background: var(--Background-Color);
+  height: 25px;
+  width: 25px;
+  text-align: center;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position : relative;
+  position: relative;
   left: 1rem;
 }
-
+.navbar ul li .log {
+  font-size: 24px;
+}
+.navbar  .log:hover{
+  color: var(--matt-color) !important;
+  text-decoration: none;
+  background: none;
+  box-shadow: none;
+}
 @media (max-width: 650px) {
-header {
+  header {
     display: flex;
     justify-content: center;
   }
-  .search{
-    position:relative;
-    top:20rem;
-}
-header .logo{
-  position: relative;
-  left: 12rem;
-}
-.navbar{
-  position: relative;
-  right: 15rem;
-}
+  .search {
+    position: relative;
+    top: 20rem;
+  }
+  header .logo {
+    position: relative;
+    left: 12rem;
+  }
+  .navbar {
+    position: relative;
+    right: 15rem;
+  }
 }
 
 /* Navbar end  */
@@ -211,6 +219,7 @@ header .logo{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5rem;
 }
 
 #right-content {
@@ -230,7 +239,7 @@ header .logo{
 
 #right-content .right-img {
   width: 40%;
-  border-radius: 2px;
+
   margin: 0rem;
   background: var(--bg-color);
   padding: 1rem;
@@ -285,8 +294,7 @@ header .logo{
   font-size: 19px;
   margin: 2rem 0rem;
 }
-.home-2{
-  background: red;
+.home-2 {
   width: 50%;
 }
 
@@ -364,15 +372,13 @@ header .logo{
   color: #ff6600;
 }
 .home-2 {
-  margin-top: 10px;
-  background: red;
+  margin-top: 10rem;
+
   width: 80%;
   height: 50vh;
 }
 
- 
- 
-.slick-slider{
+.slick-slider {
   height: 50vh;
   display: flex !important;
   justify-content: center;
@@ -381,18 +387,17 @@ header .logo{
   font-size: 24px;
 }
 
-.slick-track{
+.slick-track {
   display: flex;
   align-items: center;
   justify-content: center;
-   
-    margin-left: 6rem;
-    
+
+  margin-left: 3.5rem;
 }
 
-.h2-img{
-  width: 70%;
-  height: 20vh;
+.h2-img {
+  width: 80%;
+  height: 35vh;
 }
 
 #img {
@@ -402,7 +407,7 @@ header .logo{
 }
 
 /*                           CARD                                                      */
-.Template-cards{
+.Template-cards {
   margin-top: 100px;
   margin-bottom: 80px;
 }
@@ -566,29 +571,41 @@ header .logo{
   }
 }
 /* slick pluggin */
-.slick-next::before, .slick-prev::before{
+.slick-next::before,
+.slick-prev::before {
   font-family: slick;
   font-size: 20px;
   line-height: 1;
-  opacity: .75;
+  opacity: 0.75;
   color: #ff6600;
 }
-.responsive{
-  background: green;
+.responsive {
+  border-radius: 8px;
+  background: #e0e0e0;
+  box-shadow: -16px -16px 25px #a1a1a1, 16px 16px 25px #ffffff;
   font-size: 23px;
+}
+
+.responnsive-header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+  font-family: "Roboto", sans-serif;
 }
 
 /* imp-text  */
 
-
-.filterable_cards{
+.filterable_cards {
   display: flex;
   margin-top: 25px;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.card{
+.card {
   flex-basis: 300px;
   background-color: #dfdddd;
   padding: 3px;
@@ -596,40 +613,40 @@ header .logo{
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.05);
 }
 
-.card img{
+.card img {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
 }
 
-.card_body{
+.card_body {
   padding: 10px 10px 20px;
 }
 
-.card_title{
+.card_title {
   font-size: 17px;
   font-weight: 500;
   color: #333;
 }
 
-.card_text{
+.card_text {
   font-size: 15px;
   color: #333;
 }
 
-.card_title a{
+.card_title a {
   text-decoration: none;
   color: #333;
 }
 
-.right-text{
+.right-text {
   float: right;
   margin-top: 100px;
   margin-right: 40px;
 }
 
-.float-1{
+.float-1 {
   flex-basis: 300px;
   background-color: #dfdddd;
   padding: 3px;
@@ -639,7 +656,7 @@ header .logo{
   margin-top: 96px;
   padding-right: 46px;
 }
-.float-2{
+.float-2 {
   flex-basis: 300px;
   background-color: #dfdddd;
   padding: 3px;
@@ -648,23 +665,30 @@ header .logo{
   padding: 26px 17px;
   margin-top: 96px;
 }
-.p_text{
+.p_text {
   padding-left: 10px;
   font-size: 15px;
 }
 
-.denote{
+.denote {
   text-align: center;
 }
 
-.title-text{
+.title-text {
   font-size: 28px;
   float: right;
 }
 
-.imp-text{
+.template-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 5rem;
+}
+
+.imp-text {
   margin-top: 10rem;
   margin-left: 2rem;
   margin-bottom: 10rem;
 }
-
